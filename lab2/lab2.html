@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color:antiquewhite;
+        }
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" enctype="application/x-www-form-urlencoded | multipart/form-data | text/plain">
+            <div>
+                <label for="name">ФИО</label>
+                <input id="name" name="name" class="input" type="text" placeholder="ФИО" required>
+            </div>
+            <div>        
+                <label for="email">E-mail</label>
+                <input id="email" name="email" class="input" type="email" placeholder="E-mail" required>
+            </div>
+            <div>        
+                <label for="phone">Телефон</label>
+                <input id="phone" name="phone" class="input" type="tel" placeholder="Телефон">
+            </div>
+            <div>        
+                <label for="password">Пароль</label>
+                <input id="password" name="password" class="input" type="password" placeholder="Пароль" required>
+            </div>
+            <div>        
+                <label for="file">Прикрепить Файл</label>
+                <input id="file" name="file" class="input" type="file" accept="image/*">        
+            </div>
+            <div>        
+                <label for="date">Дата</label>
+                <input id="date" name="date" class="input" type="date" placeholder="Дата">
+            </div>
+            <div>        
+                <label for="color">Цвет</label>
+                <input id="color" name="color" class="input" type="color" value="#ff6f61">
+            </div>
+            <div>        
+                <label for="checkbox">Чекбокс</label>
+                <input id="checkbox" name="checkbox" class="input" type="checkbox" disabled>
+                <input id="checkbox" name="checkbox" class="input" type="checkbox">
+                <input id="checkbox" name="checkbox" class="input" type="checkbox">
+            </div>
+            <div>        
+                <label for="radio">Переключатель</label>
+                <input id="radio" name="radio" class="input" type="radio">
+                <input id="radio" name="radio" class="input" type="radio">
+                <input id="radio" name="radio" class="input" type="radio">
+                <input id="radio" name="radio" class="input" type="radio">
+            </div>
+            <div>
+                <textarea name="textarea" rows="4" cols="40">
+                    Введите текст...
+                </textarea>
+            </div>  
+            <select name="select">
+                <option value="first">First</option>
+                <option value="second" selected>Second</option>
+            </select>
+            <select name="select2" multiple>
+                <option value="first" selected>First</option>
+                <option value="second" >Second</option>
+            </select>
+            <div>
+                <label for="hidden">Скрытый ___></label>
+                <input id="hidden" name="hidden" class="input" type="hidden">
+            </div>
+            <div>
+                <p><input type="text" name="comment" size="40" value="Введенный текст не может изменяться"
+                    readonly>
+                </p>
+            </div>
+            <button type="submit">Отправить</button>
+        </form>
+        
+    </div>
+    
+
+</body>
+</html>

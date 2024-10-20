@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- шрифт ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--шрифт Playfair Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+      />
+
+    <title>Задание 5. Часть 2</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: roboto;
+        font-weight: 400;
+        font-size: 18px;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-size: inherit;
+        font-weight: 700;
+        font-family: PlayfairDisplay;
+      }
+      .heading-1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 10px;
+        border: 100px;
+      }
+      .heading-2 {
+        font-size: 24px;
+        padding: 5px;
+        color:darkslateblue;
+        display: inline-block;
+        background-color: antiquewhite;
+      }
+      body > p:first-of-type::first-letter {
+        color: aqua;
+        font-size: 28px;
+      }
+      blockquote {
+        position: relative;
+        text-align: center;
+        padding: 10px 40px;
+        margin: 0;
+        border-left: 10px solid darkslategray;
+        width: 600px;
+        font-style: italic;
+      }
+      blockquote::before {
+        position: absolute;
+        content: "“";
+        font-size: 60px;
+        color: blueviolet;
+        top: -5px;
+        left: 5px;
+      }
+      blockquote::after {
+        position: absolute;
+        content: "”";
+        font-size: 60px;
+        color: blueviolet;
+        bottom: -35px;
+        right: 35px;
+      }
+      .words {
+        overflow-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="welcome" class="heading-1">Добро пожаловать в Клуб Любителей Котиков!</h1>
+    <p>Мы - группа преданных <strong>любителей</strong> котиков, которые объединяются в своей <strong>страсти</strong> к этим замечательным существам. Здесь мы делимся своими <span>историями</span> и <a href="https://vk.com/miknishi" target="_blank">ресурсами</a> о котиках.</p>
+
+    <h2 id="our-cats" class="heading-2">Наши Пушистые Друзья</h2>
+    <p>Каждый член нашего клуба имеет своего <strong>любимого</strong> котика. Вот несколько историй о наших пушистых друзьях:</p>
+
+    <ol>
+        <li>Свен - 7-летний кот, обожающий спать на солнце.</li>
+        <li>Тостик - активный и игривый кот, любящий лазать по деревьям.</li>
+        <li>Симба - король дивана и наш <strong>пушистый</strong> уважаемый старший.</li>
+    </ol>
+
+    <div>
+        <img src="https://i.pinimg.com/236x/c8/cc/24/c8cc24bba37a25c009647b8875aae0e3.jpg" alt="Милый котик" width="300">
+        <img src="/images/2.jpg" alt="(Всё ещё) милый котик" width="300">
+        <img src="/images/3.jpg" alt="(Всё ещё) милый котик" width="300">
+    </div>
+
+    <h3 id="join-us">Присоединяйтесь к Нам!</h3>
+    <p>Если вы тоже любите котиков и хотите стать частью нашего клуба, заполните форму на нашем <a href="https://example.com/join" target="_blank">сайте</a>.</p>
+
+    <h2 id="events" class="heading-2">Предстоящие События</h2>
+    <p>Следите за нашими <strong>мероприятиями</strong> и встречами, которые посвящены нашим пушистым друзьям:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Дата</th>
+                <th>Мероприятие</th>
+                <th>Место</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5 октября 2024</td>
+                <td>Фотосессия для котиков</td>
+                <td>Парк «Зеленый Оазис»</td>
+            </tr>
+            <tr>
+                <td>20 октября 2024</td>
+                <td>Воркшоп по уходу за котиками</td>
+                <td>Клубный центр</td>
+            </tr>
+            <tr>
+                <td>1 ноября 2024</td>
+                <td>Выставка котиков</td>
+                <td>Галерея «Пушистик»</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3 id="contact">Контактная Информация</h3>
+    <p>Если у вас есть вопросы или предложения, вы можете связаться с нами:</p>
+    <p>Электронная почта: <a href="mailto:contact@catclub.org">contact@catclub.org</a></p>
+    <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-7890</a></p>
+
+    <blockquote cite="https://www.huxley.net/bnw/four.html">
+    <p>
+        Words can be like X-rays, if you use them properly—they’ll go through
+        anything. You read and you’re pierced.
+    </p>
+    </blockquote>
+    <p>—Aldous Huxley, <cite>Brave New World</cite></p>
+
+    <div class="words">
+    <p>
+        loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem
+    </p>
+    </div>
+  </body>
+</html>
